@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background:linear-gradient(to right, rgb(252, 252, 119),violet);
+}
+.head{
+    color: rgb(209, 83, 83);
+    font-size: 30px;
+    text-shadow: 3px 3px rgb(187, 80, 80);
+    background-color: wheat;
+    border: 3px solid brown;
+    border-radius: 10px;
+    width: 90%;
+    height:20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    left: 20px;;
+}
+.add{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 90%;
+    border-radius: 7px;
+    padding: 5px;
+    background-color: whitesmoke;
+    width: fit-content;
+    height: 20px;
+    border: 3px solid purple;
+}
+.container{
+    height: fit-content;
+    margin: 20px;
+    position: relative;
+    display: flex;
+flex-wrap: wrap;
+}
+.desc{
+    position: relative;
+    border: 3px dotted rgb(61, 61, 243);
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/264/517/desktop-wallpaper-blue-id-card-backgrounds.jpg);
+    width: 300px;
+    height: fit-content;
+    margin: 10px;
+    opacity: 0.2;
+justify-content: center;
+}
+.id{
+    font-size: 30px;
+}
+.modify{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+}
+.modify a{
+    color: purple;
+}
