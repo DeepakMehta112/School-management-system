@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(to right,darkorange,pink);
+}
+.box{
+    background-color:rgba(250,150,320, 0.5);
+    margin: 5px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    width: 100%;
+}
+tr, th,td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+th{
+    background-color:blue;
+    color: #f1f1f1;
+}
+th:hover{
+    background-color: red;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+td:hover{
+    background-color: red;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+table{
+    margin: 5px;
+    border: 1px solid yellow;
+    border-collapse:collapse;
+    width: 100%;
+}
+.s{
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color: blueviolet;
+    color: antiquewhite;
+    text-decoration: underline;
+    padding: 10px;
+}
+fieldset{
+    margin: 10px;
+    width: 100vh;
+}
+form{
+    background: linear-gradient(to right, skyblue,lightgreen);
+}
+button{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+input{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+   
+}
+input:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+.f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    color: black;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    color: antiquewhite;
+}
+    label{
+        font-weight: bolder;
+    }
+    .u{
+        display: flex;
+        justify-content: center;
+        color: brown;
+    }
+    a{
+       color: white;
+    }
+    a:hover{
+        background-color: red;
+        color: white;
+    }
