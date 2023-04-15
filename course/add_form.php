@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="add_form.css">
 </head>
 <body >
+    <div class="background"></div>
     <h1 >ADD MORE</h1>
     <div class="container" >
     

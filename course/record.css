@@ -1,50 +1,81 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image:  url(./images/bg6.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-h1{
-    text-transform: uppercase;
-    text-align: center;
-    /* font-weight: bolder; */
-    font-size: 50px;
-    margin-top: 2rem;
+.background {
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  height: 100vh;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  position: fixed;
 }
-table{
-    margin: 5rem 20rem ;
+.container {
+  /* margin-top: -100rem; */
+  transform: translateY(200px);
+  z-index: 2;
+  position: absolute;
 }
-th{
-    /* padding: 1rem 1rem; */
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+h1 {
+  filter: none;
+  text-transform: uppercase;
+  color: rgb(0, 131, 126);
+  text-align: center;
+  /* font-weight: bolder; */
+  font-size: 50px;
+  margin-top: 2rem;
 }
-td{
-
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
+table {
+  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-left: 8rem;
+  margin-bottom: 5rem;
+  /* position: absolute; */
 }
-.operations{
-    /* margin-top: 3rem; */
-    padding-top: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-left: 4rem;
-    margin-right: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+th {
+  /* padding: 1rem 1rem; */
+  background-color: #6c63ff;
+  color: aliceblue;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+td {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size: larger;
+  /* color: blue; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: blue;
+}
+tr:hover {
+  background-color: rgb(173, 255, 47);
+  transition: 1s;
+  color: aliceblue;
+  cursor: pointer;
+}
+.operations {
+  margin-top: 1rem;
+  margin-bottom: -10rem;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 4rem;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

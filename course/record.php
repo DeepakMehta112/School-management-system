@@ -12,10 +12,12 @@
     ></script>
 </head>
 <body>
+    <div class="background"></div>
     <h1>our courses.</h1>
     <div class="operations">
-    <a href="add_form.php"><i class="fa-solid fa-plus fa-5x "></i></a>
+        <a href="add_form.php"><i class="fa-solid fa-plus fa-5x "></i></a>
     </div>
+
     <div class="container">
         <table border="2px solid black">
             <tr>
@@ -63,6 +65,5 @@
             ?>
         </table>
     </div>
-    
 </body>
 </html>
