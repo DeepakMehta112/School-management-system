@@ -11,7 +11,7 @@
     $servername="localhost";
     $username="root";
     $password="";
-    $database="stdb";
+    $database="school_management";
     $conn = new mysqli($servername,$username,$password,$database);
     if ($conn->connect_error){
         die("connection failed");

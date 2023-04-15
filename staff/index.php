@@ -24,11 +24,27 @@
     ?>
     <div class="main">
 <div class="container">
+    <table>
+ <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>address</th>
+    <th>age</th>
+    <th>phone_no</th>
+    <th>position</th>
+    <th>salary</th>
+    <th>post</th>
+    <th>gender</th>
+    <th>gmail</th>
+    <th>dob</th>
+    <th>subject</th>
+    <th>actions</th>
+</tr>
     <?php
     $servername="localhost";
     $username="root";
     $password="";
-    $database="stdb";
+    $database="school_management";
     $conn=new mysqli($servername,$username,$password,$database);
     $sql = "SELECT * FROM staff";
     $result = $conn->query($sql);
@@ -36,25 +52,6 @@
         while( $row= $result->fetch_assoc()){
              ?>
             
-                <table>
-             <tr>
-                <th>id</th>
-                <th>name</th>
-                <th>address</th>
-                <th>age</th>
-                <th>phone_no</th>
-                <th>position</th>
-                <th>salary</th>
-                <th>post</th>
-                <th>gender</th>
-                <th>gmail</th>
-                <th>dob</th>
-                <th>subject</th>
-                <th><a href="editform.php?id=<?php echo $row['id'];?>&name=<?php echo $row['name'];?>&address=<?php echo$row['address'];?>&age=<?php echo $row['age'];?>&phone_no=<?php echo $row['phone_no'];?>&position=<?php echo$row['position'];?>&salary=<?php echo $row['salary'];?>&post=<?php echo $row['post'];?>&gender=<?php echo $row['gender'];?>&gmail=<?php echo$row['gmail'];?>&dob=<?php echo $row['dob'];?>&subject=<?php echo $row['subject'];?>">&#9998;</a>    
-</th>
-<th>                <a href="delete.php?id=<?php echo $row['id'];?>"><i class="material-icons">delete</i></a>
-</th>
-        </tr>
         <tr>
               <td>   <?php echo$row['id'];?></td>
                 <td>   <?php echo$row['name'];?></td>
@@ -78,14 +75,18 @@
                 <td>  <?php echo$row['dob'];?></td>
 
                 <td> <?php echo $row['subject'];?></td>
+                <td>
+                <a href="editform.php?id=<?php echo $row['id'];?>&name=<?php echo $row['name'];?>&address=<?php echo$row['address'];?>&age=<?php echo $row['age'];?>&phone_no=<?php echo $row['phone_no'];?>&position=<?php echo$row['position'];?>&salary=<?php echo $row['salary'];?>&post=<?php echo $row['post'];?>&gender=<?php echo $row['gender'];?>&gmail=<?php echo$row['gmail'];?>&dob=<?php echo $row['dob'];?>&subject=<?php echo $row['subject'];?>">&#9998;</a>    
+                <a href="delete.php?id=<?php echo $row['id'];?>"><i class="material-icons">delete</i></a>
+                </td>
              </tr> 
-             </table>
-             </div>
-             </div>
-             <?php       
+            </div>
+        </div>
+        <?php       
         }}
         $conn->close();
-    ?>
+        ?>
+        </table>
     </div>
     </div>
 </body>
