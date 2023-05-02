@@ -77,7 +77,7 @@
                 <td> <?php echo $row['subject'];?></td>
                 <td>
                 <a href="editform.php?id=<?php echo $row['id'];?>&name=<?php echo $row['name'];?>&address=<?php echo$row['address'];?>&age=<?php echo $row['age'];?>&phone_no=<?php echo $row['phone_no'];?>&position=<?php echo$row['position'];?>&salary=<?php echo $row['salary'];?>&post=<?php echo $row['post'];?>&gender=<?php echo $row['gender'];?>&gmail=<?php echo$row['gmail'];?>&dob=<?php echo $row['dob'];?>&subject=<?php echo $row['subject'];?>">&#9998;</a>    
-                <a href="delete.php?id=<?php echo $row['id'];?>"><i class="material-icons">delete</i></a>
+                <a href="delete.php?id=<?php echo $row['id'];?>"><i class="material-icons"></i></a>
                 </td>
              </tr> 
             </div>
