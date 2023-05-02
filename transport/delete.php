@@ -1,29 +1,16 @@
 <?php
-$servername="localhost";
-$username="root";
-$password="";
-$database="school management system";
-$conn=new mysqli($servername,$username,$password,$database);
-
-$id=$_GET['id'];
-
-
-if ($conn->connect_error) {
-    # code...
-    die("connection failed.");
-} else {
-    // echo("Connection Established");
+ include 'connect.php';
+ if(isset($_GET['deleteid'])){
+    $id=$_GET['deleteid'];
     $sql="DELETE FROM transport WHERE id=$id";
-    $res=$conn->query($sql);
-    if ($res===TRUE) {
-        # code...
-        echo("Deleted successfully");
-        header("location:index.php");//header function is used to redirect to somewhere
-    
-    } else {
-        # code...
-        echo("Cannot delete");
+    $result=mysqli_query($conn,$sql);
+    if($result){
+        header('location:display.php');
+
+    }else{
+        die(mysqli_error($conn));
     }
-    
-}
+ }
+
+
 ?>
