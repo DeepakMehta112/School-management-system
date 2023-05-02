@@ -48,7 +48,7 @@ flex-wrap: wrap;
     width: 300px;
     height: fit-content;
     margin: 10px;
-    opacity: 0.2;
+    opacity: 0.8;
 justify-content: center;
 }
 .id{
@@ -62,4 +62,23 @@ justify-content: center;
 }
 .modify a{
     color: purple;
+}
+.morebtn{
+    background-color: wheat;
+    color: blueviolet;
+    padding: 3px;
+    margin: 2px;
+    border: 2px solid blueviolet;
+    cursor: pointer;
+}
+.drop{
+    position: relative;
+    display: inline-block;
+}
+.more{
+    display: none;
+    position: relative;
+}
+.show{
+    display: block;
 }

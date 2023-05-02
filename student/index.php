@@ -14,14 +14,15 @@
     <div class="add"><a href="./addform.php"><i class='fas fa-plus' style='font-size:25px;color:purple'></i></a></div>
 <div class="container">
         <?php include 'conn.php';
-        $sql= " SELECT * FROM STD;";
+        $sql= "SELECT * FROM std";
         $res=$conn->query($sql);
         if($res->num_rows>0){
             while($row=$res->fetch_assoc()){
                 ?>
                 <div class="desc">
                 <div class="id"><?php echo $row['id'];?>. 
-                <?php echo $row['name'];?></div><br>
+                <?php echo $row['name'];?></div>
+                <br>
                 <div class="person">
                  <div class="gender">Gender: <?php echo $row['gender']; ?></div>
                  <div class="age">Age: <?php echo $row['age']; ?></div>
@@ -49,4 +50,5 @@
        $conn->close() ;?>
 </div>
 </body>
+<script src="./script.js"></script>
 </html>
