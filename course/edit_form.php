@@ -12,15 +12,22 @@
     <div class="container" >
     
     <div class="_form">
-    <form action="edit.php" method="get" class="block text-center">
-        <label>ID :</label> <input type="number" hidden name="id" value="<?php echo($_GET['id']);?>"><br><br>
+    <form action="edit.php" method="get">
+        <!-- <label>ID :</label> <input type="number" hidden name="id" value="<?php echo($_GET['id']);?>"><br><br> -->
         <label>Course Name :</label> <input type="text" placeholder="Course name here." name="cname" value="<?php echo($_GET['cname']);?>"><br><br>
+
         <label>Duration :</label> <input type="varchar" placeholder="Course duration." name="duration" value="<?php echo($_GET['duration']);?>"><br><br>
+
         <label>Description :</label> <input type="textarea" placeholder="Course description." name="desc" value="<?php echo($_GET['desc']);?>"><br><br>
+
         <label>Syllabus :</label> <input type="varchar" placeholder="Course syllabus." name="syllabus" value="<?php echo($_GET['$syllabus']);?>"><br><br>
+
         <label>Fee :</label> <input type="number" placeholder="Fee." name="fee" value="<?php echo($_GET['fee']);?>"><br><br>
+
         <label>Discounted fee :</label> <input type="number" placeholder="Course syllabus." name="disc_fee" value="<?php echo($_GET['disc_fee']);?>"><br><br>
+
         <label>Remarks :</label> <input type="textarea" placeholder="Remarks." name="remark" value="<?php echo($_GET['remark']);?>"><br><br>
+        
         <button type="submit" class="btn1">Done</button>
     </form>
     </div>
