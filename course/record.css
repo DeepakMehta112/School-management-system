@@ -20,8 +20,12 @@ body {
 }
 .container {
   /* margin-top: -100rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: translateY(200px);
-  z-index: 2;
+  /* z-index: 2; */
+  /* margin-left: 10px; */
   position: absolute;
 }
 h1 {
@@ -34,6 +38,8 @@ h1 {
   margin-top: 2rem;
 }
 table {
+
+  /* align-items: center; */
   margin-top: 1rem;
   margin-top: 2rem;
   margin-left: 8rem;
